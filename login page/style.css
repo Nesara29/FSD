@@ -1,0 +1,31 @@
+body{
+    justify-content: center;
+    display: flex;
+    background: url(pastel.avif);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+.Register{
+    background-color: rgba(254, 252, 249, 0.463);
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px;
+    rgba(0,0,0,0.2);
+    height: 40%;
+    margin-top: 145px;
+}
+.heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 175%;
+    margin-top: -40px;
+    color: rgb(152, 205, 239);
+}
+.toggal_bar{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+}
+.signup{
+    margin-left: 5%;
+}

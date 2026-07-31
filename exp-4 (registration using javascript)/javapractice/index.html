@@ -1,0 +1,49 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+     <div class="mainbox">
+        <h2>Registration Page</h2>
+        <form onsubmit="return verfication()">
+            <label>First Name</label><br/>
+            <input type="text" id="fname" placeholder="Please enter your first name"/><br/>
+            <div class="error" id="fnameerror"></div>
+            <label>Last Name</label><br/>
+            <input type="text" id="lname" placeholder="Please enter your last name"/><br/>
+            <div class="error" id="lnameerror"></div>
+            <label>State</label><br/>
+            <select class="state" id="state">
+                <option value="">Please Select you State</option>
+                <option value="karnataka">karnataka</option>
+                <option value="kerala">kerala</option>
+                <option value="tamil nadu">tamil nadu</option>
+                <option value="andrapradesh">andrapredesh</option>
+                <option value="telengana">telangana</option>
+            </select>
+            <div class="error" id="stateerror"></div>
+            <label>Email</label><br/>
+            <input type="email" id="email" placeholder="Please enter your email ID"/><br/>
+            <div class="error" id="emailerror"></div>
+            <label>Phone Number</label><br/>
+            <input type="text" id="pnumber" placeholder="Please enter your phone number"/><br/>
+            <div class="error" id="pnumbererror"></div>
+            <label>Password</label><br/>
+            <input type="password" id="password" placeholder="Please enter your password"/><br/>
+            <div class="error" id="passworderror"></div>
+            <label>Confirm Password</label><br/>
+            <input type="password" id="cpassword" placeholder="Please conform you password"/><br/>
+            <div class="error" id="cpassworderror"></div>
+            <button type="submit">Register Now</button><br/>
+        </form>
+        <div class="success" id="success"></div>
+     </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient(rgb(255, 78, 119), rgb(255, 114, 234), rgb(197, 90, 255));
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.mainbox{
+    margin: auto;
+    background-color: rgb(176, 176, 176 , 0.75);
+    max-width: 250px;
+    border-radius: 15px; 
+    padding: 8px 25px 8px 25px;
+}
+
+h2{
+    text-align: center;
+    font-size: 27px;
+    padding-top: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    margin: 10px 0;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover{
+    width: 110%;
+    height: 35px;
+}
+
+.state{
+   margin: 10px 0;
+   width: 100%;
+   height: 30px;
+   border: none;
+   border-radius: 5px;
+   color: rgb(110, 110, 110);
+}
+
+.state:hover{
+    width: 110%;
+    height: 35px;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 89, 230);
+}
+
+button:hover{
+    width: 110%;
+    height: 35px;
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    color: green;
+}
+
+

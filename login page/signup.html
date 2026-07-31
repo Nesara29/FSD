@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("wallpaper.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form{
+            background: rgba(0, 0, 0, 0.457);
+            padding: 15px;
+            border-radius :15px;
+            width: 250px;
+        }
+        label{
+            font-weight: bold;
+            display: block;
+            color: white;
+        }
+        input[type="text"],
+        input[type="password"]{
+            width: 100px;
+            padding: px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="radio"]{
+            margin-right:5px;
+        }
+        .radio-group{
+            margin-bottom: 0px;
+        }
+        input[type="submit"]{
+            width: 100%;
+            background-color: aliceblue;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+        input[type="submit"] :hover{
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/action_page.php" target="_blank">
+        <label for="name">Please Enter your Name.</label><br>
+        <input type="text" id="name" name="name" ><br>
+        <label for="password">Please enter your password</label><br>
+        <input type="text" id="password" name="name" ><br>
+        <label for="year">Please select which Year your in</label><br>
+        <input type="radio" id="year1" name="year">
+        <label for="year1">1st year</label><br>
+        <input type="radio" id="year2" name="year">
+        <label for="year1">2nd year</label><br>
+        <input type="radio" id="year3" name="year">
+        <label for="year3">3rd year</label><br>   
+        <label for="phonenumber">Please enter your Phone Number</label><br>
+        <input type="number" id="phonenumber" name="phonenumber" size="10"> <br>    
+        <label for="gmailid">Please enter your gmail id</label><br>
+        <input type="text" id="gmailid" name="gmailid"><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

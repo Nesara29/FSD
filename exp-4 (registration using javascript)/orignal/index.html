@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Registration page</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="mainbox">
+            <h2>Registration Form</h2>
+            <form onsubmit="return verification()">
+                <label>First Name</label><br>
+                <input type="text" id="firstname" placeholder="Enter your First Name">
+                <div class="error" id="fnameError"></div><br>
+
+                <label>Last Name</label><br>
+                <input type="text" id="lastname" placeholder="Enter your Last Name">
+                <div class="error" id="lnameError"></div><br>
+
+                <label>State</label><br>
+                <select id="location">
+                    <option value="">-- Select Your State --</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Goa">Goa</option>
+                </select>
+                <div class="error" id="stateError"></div><br>
+
+
+                <label>Phone Number</label><br>
+                <input type="text" id="pnumber" placeholder="Enter 10-digit Phone Number">
+                <div class="error" id="phoneError"></div><br>
+
+                <label>Email</label><br>
+                <input type="email" id="email" placeholder="Enter your Gmail">
+                <div class="error" id="emailError"></div><br>
+
+                <label>Password</label><br>
+                <div class="password-box">
+                    <input type="password" id="password" placeholder="Enter your Password">
+                    <span class="toggle" onclick="togglePassword('password', this)">👁️</span>
+                </div>
+                <div class="error" id="passError"></div><br>
+
+                <label>Confirm Password</label><br>
+                <div class="password-box">
+                    <input type="password" id="conformpassword" placeholder="Confirm Password">
+                    <span class="toggle" onclick="togglePassword('conformpassword', this)">👁️</span>
+                </div>
+                <div class="error" id="cpassError"></div><br>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div class="message" id="message"></div>
+        </div>        
+        <script src="script.js"></script>
+    </body>
+</html>
