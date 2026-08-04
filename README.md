@@ -1,140 +1,124 @@
-# 🎓 College Management System
+# 🚀 Full Stack Development (FSD)
 
-A web-based **College Management System** developed using **Python**, **Flask**, and **SQLite/MySQL** to automate academic administration. The system manages students, attendance, CIE records, reports, and other academic activities through a secure web interface.
+A collection of **Full Stack Development (FSD)** laboratory programs and mini-projects developed using **Java**, **Spring Boot**, **MongoDB**, **MySQL**, **HTML**, **CSS**, **JavaScript**, and **REST APIs**. This repository demonstrates both frontend and backend development concepts through practical implementations.
 
 ---
 
 ## 📖 Overview
 
-The College Management System simplifies academic administration by providing modules for managing students, attendance, internal assessments, reports, and academic records. It is designed for educational institutions and serves as an excellent learning project for Flask web development.
+This repository contains practical exercises, laboratory programs, and mini-projects that cover the complete software development lifecycle of modern web applications. It is intended for students learning Full Stack Development and developers exploring Spring Boot and web technologies.
 
 ---
 
 ## ✨ Features
 
-* 👨‍🎓 Student Management
-* 📝 Attendance Management
-* 📊 CIE/Internal Marks Management
-* 📄 Report Generation
-* 📁 Backup Management
-* 📌 Allocation Management
-* 🔍 Search Records
+* 🌐 Responsive Web Applications
+* ☕ Java Programming
+* 🍃 Spring Boot Applications
+* 🗄️ MySQL & MongoDB Integration
+* 🔗 RESTful APIs
 * ➕ CRUD Operations
-* 🔐 User Authentication
-* 📈 Dashboard
+* 🔐 Authentication & Authorization
+* 📊 Database Connectivity
+* 💻 Frontend Development
+* ⚡ Backend Development
 
 ---
 
 ## 🛠️ Tech Stack
-
-### Backend
-
-* Python
-* Flask
 
 ### Frontend
 
 * HTML5
 * CSS3
 * JavaScript
-* Bootstrap
+
+### Backend
+
+* Java
+* Spring Boot
+* REST API
 
 ### Database
 
-* SQLite / MySQL
+* MySQL
+* MongoDB
 
 ### Tools
 
+* Eclipse / IntelliJ IDEA
 * VS Code
-* Git
-* GitHub
+* Maven
+* Git & GitHub
 
 ---
 
-## 📂 Project Structure
+## 📂 Repository Structure
 
 ```text
-CMS/
-├── app.py
-├── templates/
-├── static/
-├── database/
-├── routes/
-├── models/
-├── reports/
-├── backup/
+FSD/
+├── HTML/
+├── CSS/
+├── JavaScript/
+├── Java/
+├── SpringBoot/
+├── MongoDB/
+├── MySQL/
+├── REST_API/
 └── README.md
 ```
 
 ---
 
-## 🚀 Installation
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Java JDK 17+
+* Maven
+* Spring Boot
+* MySQL
+* MongoDB
+* Visual Studio Code / Eclipse / IntelliJ IDEA
 
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/College-Management-System.git
+git clone https://github.com/your-username/FSD.git
 ```
 
-### Install Dependencies
+### Run the Project
 
-```bash
-pip install -r requirements.txt
-```
-
-### Run Application
-
-```bash
-python app.py
-```
-
-Open:
-
-```text
-http://127.0.0.1:5000
-```
+1. Import into your IDE.
+2. Configure database settings.
+3. Build using Maven.
+4. Run the Spring Boot application.
 
 ---
 
-## 📸 Modules
+## 📚 Topics Covered
 
-* Student Management
-* Attendance
-* CIE Management
-* Reports
-* Backup
-* Allocation
-* Dashboard
-
----
-
-## 🎯 Learning Objectives
-
-* Flask Framework
-* Python Programming
+* HTML & CSS
+* JavaScript
+* Java Programming
+* Spring Boot
+* REST APIs
 * CRUD Operations
-* Database Integration
-* Web Development
+* Database Connectivity
+* MongoDB
+* MySQL
 * MVC Architecture
-* Authentication
 
 ---
 
-## 🚀 Future Enhancements
+## 🎯 Learning Outcomes
 
-* Online Fee Payment
-* Parent Portal
-* Faculty Portal
-* Timetable Management
-* SMS & Email Notifications
-* AI-Based Student Analytics
-* Mobile Application
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome. Fork the repository, create a feature branch, and submit a pull request.
+* Full Stack Web Development
+* RESTful Web Services
+* Database Design
+* Backend Development
+* Frontend Development
+* API Integration
 
 ---
 
@@ -144,4 +128,10 @@ This project is intended for educational and learning purposes.
 
 ---
 
-⭐ If you found this project useful, please give it a **Star** on GitHub.
+## 👨‍💻 Author
+
+**Nesara M Gowda**
+
+Diploma in Computer Science & Engineering
+
+⭐ Star this repository if you found it useful.
