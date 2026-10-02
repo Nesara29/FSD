@@ -124,17 +124,6 @@ This is a personal lab-work repository, but suggestions and corrections are welc
 4. Push your branch.
 5. Submit a Pull Request.
 
-## 👨‍💻 Developer
-
-<div align="center">
-
-| | |
-|---|---|
-| 🧑‍💻 **Name** | `NESARA` |
-| 🐙 **GitHub** | https://github.com/Nesara29 |
-
-</div>
-
 ## 🔗 Project Links
 
 <div align="center">
