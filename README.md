@@ -9,9 +9,9 @@
 html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:hidden}
 canvas{display:block;position:fixed;inset:0;touch-action:none}
-header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;padding:18px 22px;pointer-events:none}
-h1{margin:0;font-size:clamp(18px,3.2vw,30px);letter-spacing:.04em}
-header p{margin:4px 0 0;color:var(--mut);font-size:13px}
+header{position:fixed;top:0;left:0;right:0;z-index:5;padding:calc(env(safe-area-inset-top,0px) + 20px) 22px 14px;pointer-events:none;background:linear-gradient(var(--bg),transparent)}
+h1{margin:0;padding:0;border:0;font-size:clamp(18px,3.2vw,30px);letter-spacing:.04em}
+header p{margin:6px 0 0;color:var(--mut);font-size:13px}
 #panel{position:fixed;right:18px;top:96px;width:min(320px,calc(100% - 36px));background:var(--panel);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px 18px;display:none}
 #panel h2{margin:0 0 4px;font-size:17px}
 #panel .tag{color:var(--ac);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
