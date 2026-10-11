@@ -49,14 +49,11 @@ const S=new THREE.Scene();S.fog=new THREE.FogExp2(0x1a1a2e,.035);
 const cam=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,100);cam.position.set(0,2.5,13);
 S.add(new THREE.AmbientLight(0xffffff,.55));
 const pl=new THREE.PointLight(0xffffff,1.3,60);pl.position.set(6,8,8);S.add(pl);
-// center knot
 const knot=new THREE.Mesh(new THREE.TorusKnotGeometry(1.6,.4,120,16),new THREE.MeshBasicMaterial({color:0xE94560,wireframe:true,transparent:true,opacity:.45}));
 S.add(knot);
-// stars
 const sp=new Float32Array(1500);for(let i=0;i<1500;i++)sp[i]=(Math.random()-.5)*60;
 const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.BufferAttribute(sp,3));
 const stars=new THREE.Points(sg,new THREE.PointsMaterial({color:0xEDEAE0,size:.06,transparent:true,opacity:.7}));S.add(stars);
-// ring of nodes
 const G=new THREE.Group();S.add(G);
 const nodes=[];
 function label(t){const c=document.createElement('canvas');c.width=256;c.height=64;const x=c.getContext('2d');x.font='600 34px system-ui,sans-serif';x.fillStyle='#EDEAE0';x.textAlign='center';x.textBaseline='middle';x.fillText(t,128,34);
@@ -69,7 +66,6 @@ D.forEach((e,i)=>{
  m.add(new THREE.Mesh(new THREE.IcosahedronGeometry(.95,1),new THREE.MeshBasicMaterial({color:C[e.k],wireframe:true,transparent:true,opacity:.25})));
  m.userData={i,base:m.position.y,s:1};G.add(m);nodes.push(m);
 });
-// UI
 const chips=document.getElementById('chips'),panel=document.getElementById('panel');
 let sel=-1;
 D.forEach((e,i)=>{const b=document.createElement('button');b.textContent=e.id;b.onclick=()=>pick(i);chips.appendChild(b)});
@@ -78,11 +74,9 @@ function pick(i){
  sel=i;[...chips.children].forEach((b,j)=>b.classList.toggle('on',j===i));
  if(i<0){panel.style.display='none';return}
  const e=D[i];pt.textContent=e.s;pn.textContent=e.n;pd.textContent=e.d;pr.textContent=e.r;panel.style.display='block';
- // rotate group so node faces camera
  const m=nodes[i];tgt=-Math.atan2(m.position.z,m.position.x)+Math.PI/2;
  let d=tgt-G.rotation.y;d=Math.atan2(Math.sin(d),Math.cos(d));tgt=G.rotation.y+d;focus=true;
 }
-// interaction
 let drag=false,moved=0,lx=0,vel=0,tgt=0,focus=false,mx=0,my=0;
 const ray=new THREE.Raycaster(),ptr=new THREE.Vector2();
 R.domElement.addEventListener('pointerdown',e=>{drag=true;moved=0;lx=e.clientX;focus=false});
@@ -96,7 +90,6 @@ addEventListener('pointermove',e=>{
  if(drag){const dx=e.clientX-lx;lx=e.clientX;moved+=Math.abs(dx);vel=dx*.006;G.rotation.y+=vel}
 });
 addEventListener('resize',()=>{cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();R.setSize(innerWidth,innerHeight)});
-// loop
 const clk=new THREE.Clock();
 (function loop(){
  requestAnimationFrame(loop);const t=clk.getElapsedTime();
